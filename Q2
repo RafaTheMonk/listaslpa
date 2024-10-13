@@ -1,0 +1,26 @@
+package listas;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ListaUm {
+	public static void main(String[] args) {
+		int hr, min, sec, ttlSec;
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite as horas a serem convertidas:");
+		hr = sc.nextInt();
+		
+		System.out.println("Digite os minutos a serem convertidos:");
+		min = sc.nextInt();
+		
+		System.out.println("Digite os segundos a serem somados:");
+		sec = sc.nextInt();
+		
+		ttlSec = ((hr*3600)+(min*60)+sec);
+		
+		System.out.printf("O total de tempo em segundos são %d segundos", ttlSec);
+		
+		sc.close();
+	}
+}
