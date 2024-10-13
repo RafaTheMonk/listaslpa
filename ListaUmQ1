@@ -2,7 +2,7 @@ package listas;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class ListaUmQ1 {
+public class ListaUm {
 	public static void main(String[] args) {
 		float tempC, tempF;
 		Locale.setDefault(Locale.US);
@@ -12,7 +12,7 @@ public class ListaUmQ1 {
 		tempC = sc.nextFloat();
 		
 		tempF = ((9*tempC)+160)/5;
-		System.out.printf("A temperatura em fahrenheit é %.2f", tempF);
+		System.out.printf("A temperatura em fahrenheit é %.2f Graus", tempF);
 		
 		
 		sc.close();
